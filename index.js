@@ -3,6 +3,9 @@ const express = require('express'),
 
 const app = express();
 
+app.use(morgan('common'));
+
+app.use(express.static('public'));
 
 let topMovies = [
     {
@@ -57,10 +60,6 @@ let topMovies = [
     }
 ];
 
-app.use(morgan('common'));
-
-app.use('/public' ,express.static(__dirname + '/documentation'));
-
 app.get('/', (req, res) =>{
     res.send('Welcome to MooVIV page!');
 });
@@ -72,12 +71,7 @@ app.get('/movie', (req, res) => {
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something broke!');
-  });
-
-  app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(404).send('Can not find it!');
-  });
+});
 
 app.listen(8080, ()=>{
     console.log('Your app is listening on port 8080.');
