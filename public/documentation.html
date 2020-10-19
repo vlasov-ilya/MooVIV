@@ -3,9 +3,54 @@
 <head>
     <meta charset="utf-8">
     <title>Documentation</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <h1>Documentation</h1>
-    <p>This is page with all documentation you might need to help with develop the page</p> 
+    <h1>Documentation for developers</h1>
+    <p>1) Users will be able to create an account<br>2)Users will be able to update the account (name, age, and other personal info.)<br>3) User will be able to create a list of favorite movies. </p>
+<section>
+    <table>
+        <tr>
+            <th>Request</th>
+            <th>URL</th>
+            <th>Response</th>
+        </tr>
+        <tr>
+            <td>Get a list of all Movies</td>
+            <td>/movies/</td>
+            <td>GET</td>
+        </tr>
+        <tr>
+            <td>Get movie by name</td>
+            <td>/monies/:name/</td>
+            <td>GET</td>
+        </tr>
+        <tr>
+            <td>Allow new user to register</td>
+            <td>/user/</td>
+            <td>POST</td>
+        </tr>
+        <tr>
+            <td>Allow user to Update BIO</td>
+            <td>/user/:username</td>
+            <td>PUT</td>
+        </tr>
+        <tr>
+            <td>Allow user to Create Favorites</td>
+            <td>/user/:name/movie/movie:name</td>
+            <td>POST</td>
+        </tr>
+        <tr>
+            <td>Allow user to remove from Favorites</td>
+            <td>/user/:name/movie/movie:name</td>
+            <td>DELETE</td>
+        </tr>
+        <tr>
+            <td>Allow User to delete account</td>
+            <td>/user/:name</td>
+            <td>DELETE</td>
+        </tr>
+    </table>
+</section>
 </body>
 </html>
