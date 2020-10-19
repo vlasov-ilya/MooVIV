@@ -24,7 +24,7 @@ let topMovies = [
         year: 2001
     },
     {
-        title: 'Avattar',
+        title: 'Avatar',
         director: 'James Cameron',
         year: 2009
     },
@@ -64,8 +64,52 @@ app.get('/', (req, res) =>{
     res.send('Welcome to MooVIV page!');
 });
 
+//GET all movies
+
 app.get('/movie', (req, res) => {
-    res.json(topMovies);
+    res.send('Successful GET request returning data on all movies');
+});
+
+//GET Movie by Title
+
+app.get('/movie/:title', (req, res) =>{
+    res.send('Successful GET request returning data on movie title: ' + req.params.title);
+});
+
+//GET info by Director
+
+app.get('/movie/:director', (req, res) => {
+    res.send('Successful GET request returning data on director :'+ req.params.director);
+});
+
+//POST new user
+
+app.post('/user', (req, res) =>{
+    res.send('Successful POST request registering new user');
+});
+
+// PUT updates to users info
+
+app.put('/user/:name', (req, res) =>{
+    res.send('Successful PUT request to update users: '+ req.params.name +' info');
+});
+
+// POST new movie to fav list
+
+app.post('/user/:name/movie/:title', (req, res) =>{
+    res.send('Successful POST request to add movie '+ req.params.title +' too '+ req.params.name + ' favorite list');
+});
+
+// DELETE movie from fav
+
+app.delete('/user/:name/movie/:title', (req, res) =>{
+    res.send('Successful DELETE request. movie '+ req.params.title + ' was deleted from '+ req.params.name +' favorite list');
+});
+
+// DELETE users account
+
+app.delete('/user/:name', (req, res) =>{
+    res.send('Successfully DELETE of '+ req.params.name + ' information from server');
 });
 
 app.use((err, req, res, next) => {
