@@ -1,0 +1,189 @@
+[{
+  "_id": {
+    "$oid": "5f944d0cc70812668f34098d"
+  },
+  "Title": "Silence of the Lambs",
+  "Description": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
+  "Genre": {
+    "Name": "Thriller",
+    "Description": "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience."
+  },
+  "Director": {
+    "Name": "Jonathan Demme",
+    "Bio": "Robert Jonathan Demme was an American director, producer, and screenwriter.",
+    "Birth": "1944",
+    "Death": "2017"
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0102926/mediaviewer/rm3242988544",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f944d0cc70812668f34098e"
+  },
+  "Title": "Avatar",
+  "Description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+  "Genre": {
+    "Name": "Fantasy",
+    "Description": "Fantasy films are films that belong to the fantasy genre with fantastic themes, usually magic, supernatural events, mythology, folklore, or exotic fantasy worlds. The genre is considered a form of speculative fiction alongside science fiction films and horror films, although the genres do overlap."
+  },
+  "Director": {
+    "Name": "James Cameron",
+    "Bio": "James Francis Cameron was born on August 16, 1954 in Kapuskasing, Ontario, Canada. He moved to the United States in 1971. The son of an engineer, he majored in physics at California State University before switching to English, and eventually dropping out. He then drove a truck to support his screenwriting ambition. He landed his first professional film job as art director, miniature-set builder, and process-projection supervisor on Roger Cormans Battle Beyond the Stars (1980) and had his first experience as a director with a two week stint on Piranha II: The Spawning (1981) before being fired.",
+    "Birth": "1954"
+  },
+  "ImagePath": "https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f944d0dc70812668f34098f"
+  },
+  "Title": "Fight Club",
+  "Description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+  "Genre": {
+    "Name": "Drama",
+    "Description": "The drama genre is wide, encompassing almost any movie that combines a serious plot with believable characters. The stories told in dramas revolve around the characters themselves as they face conflicts, both external and internal. Many drama films are biographies of real or fictional people, while others delve into serious issues such as politics, illness, substance abuse, and relationships."
+  },
+  "Director": {
+    "Name": "David Fincher",
+    "Bio": "David Fincher was born in 1962 in Denver, Colorado, and was raised in Marin County, California. When he was 18 years old he went to work for John Korty at Korty Films in Mill Valley. He subsequently worked at ILM (Industrial Light and Magic) from 1981-1983. Fincher left ILM to direct TV commercials and music videos after signing with N. Lee Lacy in Hollywood. He went on to found Propaganda in 1987 with fellow directors Dominic Sena, Greg Gold and Nigel Dick. Fincher has directed TV commercials for clients that include Nike, Coca-Cola, Budweiser, Heineken, Pepsi, Levis, Converse, AT&T and Chanel. He has directed music videos for Madonna, Sting, The Rolling Stones, Michael Jackson, Aerosmith, George Michael, Iggy Pop, The Wallflowers, Billy Idol, Steve Winwood, The Motels and, most recently, A Perfect Circle.",
+    "Birth": "1962"
+  },
+  "ImagePath": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f944d0dc70812668f340990"
+  },
+  "Title": "Back to the Future",
+  "Description": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.",
+  "Genre": {
+    "Name": "Comedy",
+    "Description": "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  },
+  "Director": {
+    "Name": "Robert Zemeckis",
+    "Bio": "A whiz-kid with special effects, Robert is from the Spielberg camp of film-making (Steven Spielberg produced many of his films). Usually working with writing partner Bob Gale, Roberts earlier films show he has a talent for zany comedy (Romancing the Stone (1984), 1941 (1979)) and special effect vehicles (Who Framed Roger Rabbit (1988) and Back to the Future (1985)). His later films have become more serious, with the hugely successful Tom Hanks vehicle Forrest Gump (1994) and the Jodie Foster film Contact (1997), both critically acclaimed movies. Again, these films incorporate stunning effects. Robert has proved he can work a serious story around great effects.",
+    "Birth": "1951"
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0102926/mediaviewer/rm3242988544",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f944d0dc70812668f340991"
+  },
+  "Title": "Ghostbusters",
+  "Description": "Three former parapsychology professors set up shop as a unique ghost removal service.",
+  "Genre": {
+    "Name": "Comedy",
+    "Description": "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  },
+  "Director": {
+    "Name": "Ivan Reitman",
+    "Bio": "Ivan Reitman, as a producer and director, has created many of American cinemas most successful and best loved feature film comedies and has worked with Hollywoods acting elite.",
+    "Birth": "1946"
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0102926/mediaviewer/rm3242988544",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f944d0ec70812668f340992"
+  },
+  "Title": "Forrest Gump",
+  "Description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+  "Genre": {
+    "Name": "Drama",
+    "Description": "The drama genre is wide, encompassing almost any movie that combines a serious plot with believable characters. The stories told in dramas revolve around the characters themselves as they face conflicts, both external and internal. Many drama films are biographies of real or fictional people, while others delve into serious issues such as politics, illness, substance abuse, and relationships."
+  },
+  "Director": {
+    "Name": "Robert Zemeckis",
+    "Bio": "A whiz-kid with special effects, Robert is from the Spielberg camp of film-making (Steven Spielberg produced many of his films). Usually working with writing partner Bob Gale, Roberts earlier films show he has a talent for zany comedy (Romancing the Stone (1984), 1941 (1979)) and special effect vehicles (Who Framed Roger Rabbit (1988) and Back to the Future (1985)). His later films have become more serious, with the hugely successful Tom Hanks vehicle Forrest Gump (1994) and the Jodie Foster film Contact (1997), both critically acclaimed movies. Again, these films incorporate stunning effects. Robert has proved he can work a serious story around great effects.",
+    "Birth": "1951"
+  },
+  "ImagePath": "https://www.imdb.com/title/tt0102926/mediaviewer/rm3242988544",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f944e6b8450fb4172f16872"
+  },
+  "Title": "Never Back Down",
+  "Description": "A frustrated and conflicted teenager arrives at a new high school to discover an underground fight club and meet a classmate who begins to coerce him into fighting.",
+  "Genre": {
+    "Name": "Action Films",
+    "Description": "Action movies include the heart-pumping, high-energy scenes that get people talking long after the film has finished. Some typical elements of action movies include brawls, car chases, natural disasters, and martial arts."
+  },
+  "Director": {
+    "Name": "Jeff Wadlow",
+    "Bio": "After Quentin Tarantino saw Jeff Wadlows latest writing and directing effort, Kick Ass 2, he named it one of the 2013s best films, stating it demonstrated a 'real auteur approach.'",
+    "Birth": "1976"
+  },
+  "ImagePath": "https://m.media-amazon.com/images/M/MV5BMTkzNDg3MTIyMF5BMl5BanBnXkFtZTcwOTAwNDc1MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f96c396af2069b1cb65ca30"
+  },
+  "Title": "Step UP",
+  "Description": "Tyler Gage receives the opportunity of a lifetime after vandalizing a performing arts school, gaining him the chance to earn a scholarship and dance with an up and coming dancer, Nora.",
+  "Genre": {
+    "Name": "Crime",
+    "Description": "Crime films are almost always dramatic in nature, encompassing the many angles of both enforcing and breaking the law. Plot lines most often focus on the criminals themselves, from petty thieves to mafia or international crime rings. Other crime films feature the men and women who fight crime, from traditional police officers and detectives to elite groups established under a cloak of secrecy."
+  },
+  "Director": {
+    "Name": "Anne Fletcher",
+    "Bio": "Anne Fletcher was born on May 1, 1966 in Detroit, Michigan, USA. She is known for her work on The Proposal (2009), Step Up (2006) and Hairspray (2007).",
+    "Birth": "1966"
+  },
+  "ImagePath": "https://m.media-amazon.com/images/M/MV5BODEzMzVhODgtOTc1NS00MmY3LWI3OGUtN2ZjNDEwM2ExZjJlXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f96c527f9d625bac874a3c8"
+  },
+  "Title": "The Fast and the Furious",
+  "Description": "Los Angeles police officer Brian OConner must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy.",
+  "Genre": {
+    "Name": "Action Films",
+    "Description": "Action movies include the heart-pumping, high-energy scenes that get people talking long after the film has finished. Some typical elements of action movies include brawls, car chases, natural disasters, and martial arts."
+  },
+  "Director": {
+    "Name": "Rob Cohen",
+    "Bio": "Rob Cohen is an American film director, producer and screenwriter. One of the 1970s 'baby moguls', he built a thriving career as a producer, before concentrating full time on directing from the 1990s, with high adrenaline action blockbusters such as xXx (2002) and Dragon: The Bruce Lee Story (1993). He is the creator of The Fast and the Furious (2001), Universal Pictures biggest franchise of all time",
+    "Birth": "1949"
+  },
+  "ImagePath": "https://m.media-amazon.com/images/M/MV5BNzlkNzVjMDMtOTdhZC00MGE1LTkxODctMzFmMjkwZmMxZjFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  "Featured": false
+},{
+  "_id": {
+    "$oid": "5f96c823af2069b1cb65ca31"
+  },
+  "Title": "Gladiator",
+  "Description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+  "Genre": {
+    "Name": "Adventure",
+    "Description": "The adventure genre is based on story-telling. Often combined with at least one other genre, such as action or science fiction, adventure films weave richly detailed settings together with a plot based on a journey or quest. Common themes in adventure movies include time travel, treasure hunting, historical time periods, and coming of age. These movies often contain a moral or social commentary."
+  },
+  "Director": {
+    "Name": "Ridley Scott",
+    "Bio": "Described by film producer Michael Deeley as ''the very best eye in the business'', director Ridley Scott was born on November 30, 1937 in South Shields, Tyne and Wear (then County Durham)",
+    "Birth": "1997"
+  },
+  "ImagePath": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  "Featured": true
+},{
+  "_id": {
+    "$oid": "5f96c876af2069b1cb65ca32"
+  },
+  "Title": "Titanic",
+  "Description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+  "Genre": {
+    "Name": "Romance",
+    "Description": "Romance films or romance movies are romantic love stories recorded in visual media for broadcast in theaters and on TV that focus on passion, emotion, and the affectionate romantic involvement of the main characters and the journey that their love takes them through dating, courtship or marriage."
+  },
+  "Director": {
+    "Name": "James Cameron",
+    "Bio": "James Francis Cameron was born on August 16, 1954 in Kapuskasing, Ontario, Canada. He moved to the United States in 1971. The son of an engineer, he majored in physics at California State University before switching to English, and eventually dropping out. He then drove a truck to support his screenwriting ambition. He landed his first professional film job as art director, miniature-set builder, and process-projection supervisor on Roger Cormans Battle Beyond the Stars (1980) and had his first experience as a director with a two week stint on Piranha II: The Spawning (1981) before being fired.",
+    "Birth": "1954"
+  },
+  "ImagePath": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  "Featured": true
+}]
