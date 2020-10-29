@@ -203,15 +203,15 @@ db.moovivdb.insertOne(Movie11)
 
 // USERS
 
-let User1 = {
-    UserName: "Jhon Smith",
+let User6 = {
+    UserName: "test",
     Password: "1234",
-    Email: "JS@Gmailo.com",
+    Email: "t@Gmailo.com",
     Birthday: "01/01/1990",
     FavotiteMovies: [],
 }
-//  ObjectId("5f944b1ec70812668f340983")
-db.users.insertOne(User1)
+
+db.users.insertOne(User6)
 
 let User2 = {
     UserName: "Mike Smith",

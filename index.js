@@ -118,7 +118,7 @@ app.post('/users', (req, res) => {
             Email: req.body.Email,
             Birthday: req.body.Birthday
           })
-          .then((user) =>{res.status(201).json(user) })
+          .then((user) =>{res.json(user) })
         .catch((error) => {
           console.error(error);
           res.status(500).send('Error: ' + error);
@@ -130,30 +130,7 @@ app.post('/users', (req, res) => {
       res.status(500).send('Error: ' + error);
     });
 });
-// app.post('/users', (req, res) => {
-//     Users.findOne({ Username: req.body.Username })
-//       .then((user) => {
-//         if (user) {
-//           return res.status(400).send(req.body.Username + 'already exists');
-//         } else {
-//           Users.create({
-//             Username: req.body.Username,
-//             Password: req.body.Password,
-//             Email: req.body.Email,
-//             Birthday: req.body.Birthday
-//           })
-//             .then((user) => { res.status(201).json(user); })
-//             .catch((err) => {
-//               console.error(err);
-//               res.status(500).send('Error: ' + err);
-//             });
-//         }
-//       })
-//       .catch((error) => {
-//         console.error(error);
-//         res.status(500).send('Error: ' + error);
-//       });
-//   });
+
 
 // PUT updates to users info
 
@@ -173,7 +150,7 @@ app.put('/users/:Username', (req, res) => {
         console.error(err);
         res.status(500).send('Error: ' + err);
       } else {
-        res.status(201).json(updatedUser);
+        res.json(updatedUser);
       }
     });
   });
