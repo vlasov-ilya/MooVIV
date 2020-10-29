@@ -92,8 +92,8 @@ app.get('/users', (req, res) => {
 
 // Get User bu Username
 
-app.get('/users/:UserName', (req, res) => {
-  Users.findOne({ UserName: req.params.UserName })
+app.get('/users/:Username', (req, res) => {
+  Users.findOne({ Username: req.params.Username })
     .then((user) => {
       res.json(user);
     })
@@ -106,35 +106,62 @@ app.get('/users/:UserName', (req, res) => {
 //POST new user
 
 app.post('/users', (req, res) => {
-    Users.findOne({ UserName: req.body.UserName })
-      .then((user) => {
-        if (user) {
-          return res.status(400).send(req.body.UserName + 'already exists');
-        } else {
-          Users.create({
-            UserName: req.body.UserName,
+  Users.findOne({ Username: req.body.Username })
+    .then((user) => {
+      if (user) {
+        return res.status(400).send(req.body.Username + 'already exists');
+      } else {
+        Users
+          .create({
+            Username: req.body.Username,
             Password: req.body.Password,
             Email: req.body.Email,
             Birthday: req.body.Birthday
           })
-            .then((user) => { res.status(201).json(user); })
-            .catch((err) => {
-              console.error(err);
-              res.status(500).send('Error: ' + err);
-            });
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-        res.status(500).send('Error: ' + error);
-      });
-  });
+          .then((user) =>{res.status(201).json(user) })
+        .catch((error) => {
+          console.error(error);
+          res.status(500).send('Error: ' + error);
+        })
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+      res.status(500).send('Error: ' + error);
+    });
+});
+// app.post('/users', (req, res) => {
+//     Users.findOne({ Username: req.body.Username })
+//       .then((user) => {
+//         if (user) {
+//           return res.status(400).send(req.body.Username + 'already exists');
+//         } else {
+//           Users.create({
+//             Username: req.body.Username,
+//             Password: req.body.Password,
+//             Email: req.body.Email,
+//             Birthday: req.body.Birthday
+//           })
+//             .then((user) => { res.status(201).json(user); })
+//             .catch((err) => {
+//               console.error(err);
+//               res.status(500).send('Error: ' + err);
+//             });
+//         }
+//       })
+//       .catch((error) => {
+//         console.error(error);
+//         res.status(500).send('Error: ' + error);
+//       });
+//   });
 
 // PUT updates to users info
-app.put('/users/:UserName', (req, res) => {
-  Users.findOneAndUpdate({ UserName: req.params.UserName},
+
+
+app.put('/users/:Username', (req, res) => {
+  Users.findOneAndUpdate({ Username: req.params.Username},
     { $set: {
-        UserName: req.body.UserName,
+        Username: req.body.Username,
         Password: req.body.Password,
         Email: req.body.Email,
         Birthdate: req.body.Birthdate
@@ -153,8 +180,8 @@ app.put('/users/:UserName', (req, res) => {
 
 // POST new movie to fav list
 
-app.post('/users/:UserName/Movies/:MovieID', (req, res) => {
-  Users.findOneAndUpdate({ UserName: req.params.UserName }, {
+app.post('/users/:Username/Movies/:MovieID', (req, res) => {
+  Users.findOneAndUpdate({ Username: req.params.Username }, {
     $push: { FavoriteMovies: req.params.MovieID }
   },
   { new: true },
@@ -172,9 +199,9 @@ app.post('/users/:UserName/Movies/:MovieID', (req, res) => {
 
 // DELETE movie from fav
 
-app.delete('/users/:UserName/Favorites/:MovieID', (req, res) =>{
+app.delete('/users/:Username/Favorites/:MovieID', (req, res) =>{
        Users.findOneAndUpdate(  
-         { UserName: req.params.UserName},
+         { Username: req.params.Username},
       { $pull: { FavoriteMovies: req.params.MovieID}
     },
     {new: true},
@@ -190,13 +217,13 @@ app.delete('/users/:UserName/Favorites/:MovieID', (req, res) =>{
 
 // DELETE users account
 
-app.delete('/users/:UserName', (req, res) => {
-  Users.findOneAndRemove({ UserName: req.params.UserName })
+app.delete('/users/:Username', (req, res) => {
+  Users.findOneAndRemove({ Username: req.params.Username })
     .then((user) => {
       if (!user) {
-        res.status(400).send(req.params.UserName + ' was not found');
+        res.status(400).send(req.params.Username + ' was not found');
       } else {
-        res.status(200).send(req.params.UserName + ' was deleted.');
+        res.status(200).send(req.params.Username + ' was deleted.');
       }
     })
     .catch((err) => {
