@@ -1,3 +1,4 @@
+const bodyParser = require('body-parser');
 const express = require('express'),
     morgan = require('morgan'),
     mongoose = require('mongoose'),
@@ -13,6 +14,8 @@ const express = require('express'),
 
 
 app.use(morgan('common'));
+
+app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
