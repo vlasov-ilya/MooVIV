@@ -110,10 +110,12 @@ app.get('/users/:Username', passport.authenticate('jwt',{session: false}), (req,
 
 //POST new user
 
-app.post('/users', [check('Username', 'Username is required').isLength({min: 5}),
-check('Username','Username contain non alpanumeric characters - not allowed.').isAlphonumeric(),
-Check('Password','Password is required').not().isEmpty(),
-check('Email', 'Email does not appear to be valid.').isEmail()], (req, res) => {
+app.post('/users', [
+check('Username', 'Username is required').isLength({min: 5}),
+check('Username','Username contain non alpanumeric characters - not allowed').isAlphanumeric(),
+check('Password','Password is required').not().isEmpty(),
+check('Email', 'Email does not appear to be valid.').isEmail()
+], (req, res) => {
   let errors = validationResult(req);
   if( !errors.isEmpty()) {
     return res.status(422).json({errors: errors.array()});
