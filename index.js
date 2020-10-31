@@ -3,9 +3,8 @@ const express = require('express'),
     morgan = require('morgan'),
     mongoose = require('mongoose'),
     Models = require('./models.js'),
-    passport = require('passport');
-    
-const cors = require('cors');
+    passport = require('passport'),
+    cors = require('cors');
 const {check, validationResult} = require('express-validator');
 
     const Movies = Models.Movie;
