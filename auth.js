@@ -10,7 +10,7 @@ let generateJWTToken = (user) => {
         expiresIn: '7d',
         algorithm: 'HS256'
     });
-}
+};
 
 // after login
 
@@ -21,7 +21,7 @@ module.exports = (router) => {
             if (error || !user) {
                 return res.status(400).json({
                     message: 'Something is not right.',
-                    user: yser
+                    user: user
                 });
             }
             req.login(user, {session: false}, (error) =>{
@@ -33,4 +33,4 @@ module.exports = (router) => {
             });
         })(req,res);
     });
-}
+};
