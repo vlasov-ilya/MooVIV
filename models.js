@@ -1,7 +1,5 @@
 const mongoose = require ("mongoose"),
       bcrypt = require('bcrypt');
-const passport = require('passport');
-
 
 let movieSchema = mongoose.Schema({
   Title: {type: String, required: true},
