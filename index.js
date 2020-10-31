@@ -1,31 +1,36 @@
-const bodyParser = require('body-parser');
-const express = require('express'),
-    morgan = require('morgan'),
-    mongoose = require('mongoose'),
-    Models = require('./models.js'),
-    passport = require('passport'),
-    cors = require('cors');
-const {check, validationResult} = require('express-validator');
+const bodyParser = require('body-parser'),
+      express = require('express'),
+      morgan = require('morgan'),
+      mongoose = require('mongoose'),
+      Models = require('./models.js');
 
-    const Movies = Models.Movie;
-    const Users = Models.User;
-    require('./passport');
+
+  const Movies = Models.Movie;
+  const Users = Models.User;
+    
 
     // mongoose.connect('mongodb://localhost:27017/moovivdb', { useNewUrlParser: true, useUnifiedTopology: true });
-    mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
-    const app = express();
+const app = express();
     
 
 app.use(morgan('common'));
+
 app.use(bodyParser.json());
+
 app.use(express.static('public'));
+
 let auth = require('./auth')(app);
+
+const passport = require('passport');
+require('./passport');
+
+const cors = require('cors');
+
+const {check, validationResult} = require('express-validator');
+
 app.use(cors());
-
-
-
-
 
 app.get('/', (req, res) =>{
     res.send('Welcome to MooVIV page!');
