@@ -12,7 +12,7 @@ const {check, validationResult} = require('express-validator');
     require('./passport');
 
     // mongoose.connect('mongodb://localhost:27017/moovivdb', { useNewUrlParser: true, useUnifiedTopology: true });
-    mongoose.connect('mongodb+srv://MooVIVDBadmin:admin@mooviv.sif7n.mongodb.net/moovivdb?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+    mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
     const app = express();
     
