@@ -21,16 +21,17 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
+const cors = require('cors');
+app.use(cors());
+
 let auth = require('./auth')(app);
 
 const passport = require('passport');
 require('./passport');
 
-const cors = require('cors');
-
+// 
 const {check, validationResult} = require('express-validator');
-
-app.use(cors());
+// 
 
 app.get('/', (req, res) =>{
     res.send('Welcome to MooVIV page!');
