@@ -26,21 +26,22 @@ Users
 
 Awailable user for testing, feel free to create your own
 
-{
-  "username": "test1",
-  "password": "test1",
-  "email": "test@test.com",
-  "birthday": "11-11-2011"
-}
+{<br>
+  "username": "test1",<br>
+  "password": "test1",<br>
+  "email": "test@test.com",<br>
+  "birthday": "11-11-2011"<br>
+}<br>
 
 https://mooviv.herokuapp.com/directors/test1- Update user on the body raw follow the same format as adding use.
 for example
-{
-  "username": "test1",
-  "password": "test2",
-  "email": "test@test.com",
-  "birthday": "11-11-2011"
-}
+
+{<br>
+  "username": "test1",<br>
+  "password": "test2",<br>
+  "email": "test@test.com",<br>
+  "birthday": "11-11-2011"<br>
+}<br>
 
 https://mooviv.herokuapp.com/users/test1 - Remove user
 
@@ -55,13 +56,17 @@ https://mooviv.herokuapp.com/users - Login user
 Usage
 
 If you clone or download the repo. Replace the connection db with your own connection strings.
+
 // Connect to database
-mongoose.connect(process.env.CONNECTION_URI, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
-});
+
+mongoose.connect(process.env.CONNECTION_URI,
+
+{<br>
+  useNewUrlParser: true,<br>
+  useCreateIndex: true,<br>
+  useFindAndModify: false,<br>
+  useUnifiedTopology: true,<br>
+}<br>
 
 Install Dependencies
 
