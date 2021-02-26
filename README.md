@@ -2,8 +2,11 @@ Movie API
 Backend API for MooVIV application, which is a movie directory website
 
 Usage on Postman
+
 Add user first using post method https://mooviv.herokuapp.com/users
+
 Log in using post method https://mooviv.herokuapp.com/users
+
 Copy the token created
 
 Do this everytime the endpoint is returning a 401 status code meaning you are not authenticated to access the endpoint. On authorization tab select "Bearer Token" and paste the token in the input.
@@ -13,8 +16,11 @@ Available endpoints and description
 Movie
 
 https://mooviv.herokuapp.com/movies - Get all movies
+
 https://mooviv.herokuapp.com/movies/Movie/:Title - Get movie by title
+
 https://mooviv.herokuapp.com/movies/genres/Drama - Get genre by title
+
 https://mooviv.herokuapp.com/movies/directors/David%20Fincher - Get director by name
 Users
 
