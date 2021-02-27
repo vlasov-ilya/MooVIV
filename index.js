@@ -9,7 +9,10 @@ const Movies = Models.Movie;
 const Users = Models.User;
 
 /**
- * list of pluged and links wich inused for the back end of MooVIV app
+ * list off all inused modules 
+ * 
+ * @param {string} list - list of all  
+ * 
  */
 
 // mongoose.connect('mongodb://localhost:27017/moovivdb', { useNewUrlParser: true, useUnifiedTopology: true });
@@ -44,6 +47,8 @@ app.get('/', (req, res) => {
  * GET all movies
  * 
  * the API to get all movies list 
+ * @returns {string} movies 
+ * 
  */
 
 app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -61,6 +66,9 @@ app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) 
 /**
  * 
  * the API to get one movie by title 
+ * 
+ * @param {string} Title returns movie by title
+ * @returns {string} movie 
  */
 
 app.get('/movies/:Title', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -78,7 +86,10 @@ app.get('/movies/:Title', passport.authenticate('jwt', { session: false }), (req
 
 /**
  * 
- * the API to get genre by title 
+ * the API to get one genre by title 
+ * 
+ * @param {string} Title returns genre by title
+ * @returns {string} genre 
  */
 
 app.get('/movies/Genres/:Title', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -96,7 +107,10 @@ app.get('/movies/Genres/:Title', passport.authenticate('jwt', { session: false }
 
 /**
  * 
- * the API to get director by name
+ * the API to get director by name 
+ * 
+ * @param {string} Name returns movie by title
+ * @returns {string} Director 
  */
 
 app.get('/movies/Directors/:Name', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -114,7 +128,9 @@ app.get('/movies/Directors/:Name', passport.authenticate('jwt', { session: false
 
 /**
  * 
- * the API to get list of users
+ * the API to get all users
+ * 
+ * @returns {array} users 
  */
 
 app.get('/users', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -131,7 +147,10 @@ app.get('/users', passport.authenticate('jwt', { session: false }), (req, res) =
 // Get User bu Username
 /**
  * 
- * the API to get user by Username
+ * the API to get users information
+ * 
+ * @param {string} Username returns user by username
+ * @returns {string} user
  */
 
 app.get('/users/:Username', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -148,13 +167,14 @@ app.get('/users/:Username', passport.authenticate('jwt', { session: false }), (r
 //POST new user
 
 /**
- * 
  * the API to create new user
+ * 
  * @param {string} Username - username 
  * @param {string} Password - Password, String, Alphanumeric
  * @param {string} Email - users email
  * @param {date} Birthdy - users birthday date 
  * @returns {object} returns new user to the DataBase
+ * 
  */
 
 app.post('/users', [
@@ -195,8 +215,8 @@ app.post('/users', [
 
 // PUT updates to users info
 /**
- * 
  * the API to update users info
+ * 
  * @param {string} Username - new username 
  * @param {string} Password - new Password, Alphanumeric
  * @param {string} Email - new users email
@@ -229,7 +249,12 @@ app.put('/users/:Username', passport.authenticate('jwt', { session: false }), (r
 
 // POST new movie to fav list
 /**
- * API to add movie to favorite list 
+ * 
+ * the API to add movie to fav list 
+ * 
+ * @param {string} Usernaem users info
+ * @param {string} MovieID movie by title
+ * @returns {string} movie to favotite list  
  */
 
 app.post('/users/:Username/Movies/:MovieID', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -250,7 +275,13 @@ app.post('/users/:Username/Movies/:MovieID', passport.authenticate('jwt', { sess
 // DELETE movie from fav
 
 /**
- * API to remove movie from favorite list 
+ * 
+ * the API to delete movie from fav list
+ * 
+ * @param {string} Usernaem users info
+ * @param {string} MovieID movie by title
+ * @returns {string} movie to favotite list  
+ * 
  */
 
 app.delete('/users/:Username/Favorites/:MovieID', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -274,7 +305,8 @@ app.delete('/users/:Username/Favorites/:MovieID', passport.authenticate('jwt', {
 
 /**
  * API to add remove users account from DataBase 
- * @param {} 
+ * @param {string} Username users username
+ * @returns {string} user removed from database 
  */
 
 app.delete('/users/:Username', passport.authenticate('jwt', { session: false }), (req, res) => {

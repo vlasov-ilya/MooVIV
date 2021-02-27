@@ -5,9 +5,11 @@ const jwt = require('jsonwebtoken'),
 require('./passport');
 
 /**
+ * function to set up JWT token setings
  * 
  * @param {string} user - function setup to generate token 
  * @param {string} experation - Experation time for the token is 7 days
+ *  
  */
 
 let generateJWTToken = (user) => {
@@ -19,6 +21,13 @@ let generateJWTToken = (user) => {
 }
 
 // after login
+
+/**
+ *function to make token works with login user data
+ *  
+ * @param {function} router function to create the JWTToken for user after login 
+ * @returns {token} return token to the JSON file or DataBase untill expiring 
+ */
 
 
 module.exports = (router) => {
